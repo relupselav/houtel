@@ -90,7 +90,7 @@ body {
     justify-content: center;
     font-family: var(--font-primary);
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: 4px;
     border: none;
     cursor: pointer;
 }
@@ -107,7 +107,7 @@ body {
 }
 
 .button--large {
-    padding: 14px 28px;
+    padding: 10px 50px;
     font-size: var(--fs-large);
 }
 
@@ -183,7 +183,7 @@ body {
     display: block;
     margin-bottom: 6px;
     font-size: var(--fs-small);
-    color: var(--color-old-silver);
+    color: var(--color-granite-gray);
 }
 
 .search__actions {
@@ -210,14 +210,10 @@ body {
     width: 100%;
     padding: 8px 12px;
     font-size: var(--fs-medium);
-    border-radius: 5px;
+    border-radius: 2px;
     border: 1px solid var(--color-gray);
     background-color: var(--color-white);
-    color: var(--color-granite-gray);
+    color: var(--color-old-silver);
     appearance: none;
     cursor: pointer;
-}
-
-.search__select option {
-    color: var(--color-old-silver, #818486);
 }

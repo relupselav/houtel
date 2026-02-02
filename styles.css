@@ -1,0 +1,223 @@
+:root {
+    /* Neutral */
+    --color-black-olive: #393E41;
+    --color-granite-gray: #5D6163;
+    --color-old-silver: #818486;
+    --color-gray: #BABABA;
+    --color-platinum: #E8E8E8;
+    --color-white: #FFFFFF;
+
+    /* Pink */
+    --color-carmine-pink: #E94F37;
+    --color-salmon: #EF7F6D;
+    --color-spanish-pink: #F7BFB6;
+
+    /* Green */
+    --color-verdigris: #44BBA4;
+    --color-medium-aquamarine: #66C7B4;
+    --color-perl-aqua: #88D3C5;
+
+    /* Typography */
+    --font-primary: "Open Sans", system-ui, sans-serif;
+    --font-secondary: "Playfair Display", serif;
+
+    --fs-xxxx-large: 130px;
+    --fs-xxx-large: 100px;
+    --fs-xx-large: 30px;
+    --fs-x-large: 20px;
+    --fs-large: 18px;
+    --fs-medium: 16px;
+    --fs-small: 14px;
+    --fs-x-small: 12px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-primary);
+    font-size: var(--fs-medium);
+    color: var(--color-white);
+
+    background-image: url("./assets/images/bg_img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-color: var(--color-white);
+}
+
+/* Typography */
+.text--heading-xl {
+    font-family: var(--font-secondary);
+    font-size: var(--fs-xxxx-large);
+    font-weight: 700;
+    margin: auto;
+}
+
+.text--heading-lg {
+    font-family: var(--font-secondary);
+    font-size: var(--fs-xxx-large);
+    font-weight: 700;
+    margin: auto;
+}
+
+.text--heading-md {
+    font-size: var(--fs-xx-large);
+    font-weight: 700;
+    margin: auto;
+}
+
+.text--x-large {
+    font-size: var(--fs-x-large);
+    margin: auto;
+}
+
+.text--large {
+    font-size: var(--fs-large);
+    margin: auto;
+}
+
+
+/* Buttons */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Sizes */
+.button--small {
+    padding: 6px 12px;
+    font-size: var(--fs-small);
+}
+
+.button--medium {
+    padding: 10px 20px;
+    font-size: var(--fs-medium);
+}
+
+.button--large {
+    padding: 14px 28px;
+    font-size: var(--fs-large);
+}
+
+
+/* Color schemes */
+.button--default {
+    background-color: var(--color-carmine-pink);
+    color: var(--color-white);
+}
+
+.button--positive {
+    background-color: var(--color-verdigris);
+    color: var(--color-white);
+}
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 24px;
+  z-index: 10;
+}
+
+.navbar__brand {
+  font-family: var(--font-primary);
+  font-size: var(--fs-xx-large);
+  font-weight: 800;
+  color: var(--color-white);
+}
+/* Hero */
+.hero {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/*Search*/
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+    padding-bottom: 60px;
+}
+
+.search__form {
+    width: 100%;
+    max-width: 900px;
+    background-color: var(--color-white);
+    padding: 24px;
+    border-radius: 5px;
+}
+
+/* Fields */
+.search__field {
+    margin-bottom: 16px;
+}
+
+/* Labels */
+.search__label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: var(--fs-small);
+    color: var(--color-old-silver);
+}
+
+.search__actions {
+    text-align: center;
+    margin-top: 24px;
+}
+
+/*  Inputs */
+.search__input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: var(--fs-medium);
+    border-radius: 5px;
+    border: 1px solid var(--color-gray);
+    background-color: var(--color-white);
+    color: var(--color-granite-gray);
+}
+
+.search__input::placeholder {
+    color: var(--color-old-silver);
+}
+
+.search__select {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: var(--fs-medium);
+    border-radius: 5px;
+    border: 1px solid var(--color-gray);
+    background-color: var(--color-white);
+    color: var(--color-granite-gray);
+    appearance: none;
+    cursor: pointer;
+}
+
+.search__select option {
+    color: var(--color-old-silver, #818486);
+}
